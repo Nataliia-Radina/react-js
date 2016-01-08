@@ -993,6 +993,11 @@ p.sponsor-type {
         height: 100%;
         width: 100%;  
     }
+
+    .slide.event {
+        height: 100%;
+    }
+    
     .schedule-2 .page-background {
         background-position: left bottom;
     }
