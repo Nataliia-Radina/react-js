@@ -40,8 +40,8 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: auto 100%;
-         -o-background-size: auto 100%;
-            background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
 }
 
 /* mobile-menu styles */
@@ -112,7 +112,7 @@ body {
 }
 
 .mobile-menu li {
-   padding: 15px;
+ padding: 15px;
 }
 
 .mobile-link {
@@ -352,8 +352,8 @@ li:last-child {
     height: 214px;
     background-image: url("../img/event.jpg");
     -webkit-background-size: cover ;
-         -o-background-size: cover ;
-            background-size: cover ;
+    -o-background-size: cover ;
+    background-size: cover ;
     position: absolute;
     top: 0;
     left: 0;
@@ -409,8 +409,8 @@ li:last-child {
     width: 50%;
     display: inline-block;
     -webkit-background-size: cover;
-         -o-background-size: cover;
-            background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .location-text {
@@ -702,7 +702,7 @@ p.sponsor-type {
 }
 
 .organizers-wrapper {
-    width: 58%;
+    width: 60%;
     margin: 0 auto; 
     font-size: 0;  
 }
@@ -727,7 +727,7 @@ p.sponsor-type {
 }
 
 /* fonts */
-   @font-face {
+@font-face {
     font-family: "latoblack";
     src: url("../fonts/lato-black-webfont.eot");
     src: url("../fonts/lato-black-webfont.eot?#iefix") format("embedded-opentype"),
@@ -793,7 +793,7 @@ p.sponsor-type {
 
 /* mediaquerries */
 
-   @media (max-width: 760px){
+@media (max-width: 760px){
 
 
     .organizers-wrapper {
@@ -816,133 +816,133 @@ p.sponsor-type {
         padding-top: 90px;
     }
     .main-heading {
-       font-size: 66px;
-    }
-   .black-heading {
+     font-size: 66px;
+ }
+ .black-heading {
     font-size: 60px;  
-    }
+}
 
-    .slogan {
-        font-size: 15px;
-    }
+.slogan {
+    font-size: 15px;
+}
 
-    .date-place {
-        font-size: 20px;
-    }
+.date-place {
+    font-size: 20px;
+}
 
-    .footer {
-        display: none;
-    }
+.footer {
+    display: none;
+}
 
-    .slide.location {
-        height: 200%;
-        min-height: 1000px;
-    }
+.slide.location {
+    height: 200%;
+    min-height: 1000px;
+}
 
-    .location .page-background {
-        width: 100%;
-        height: 50%;
-        display: block;
-    }
+.location .page-background {
+    width: 100%;
+    height: 50%;
+    display: block;
+}
 
-    .map-wrap {
-        width: 100%;
-        height: 50%;
-        display: block; 
-    }
+.map-wrap {
+    width: 100%;
+    height: 50%;
+    display: block; 
+}
 
-    .speaker-block {
-        width: 100%;
-        margin-right: 0;
-        display: block;     
-    }
+.speaker-block {
+    width: 100%;
+    margin-right: 0;
+    display: block;     
+}
 
-    .speaker-wrapper {
-        width: 84%;
-    }
+.speaker-wrapper {
+    width: 84%;
+}
 
-    .schedule-info {
-        width: 84%;
-    }
-    .schedule-heading {
-        width: 84%; 
-    }
-    .organizers-wrapper {
-        width: 84%;  
-    }
+.schedule-info {
+    width: 84%;
+}
+.schedule-heading {
+    width: 84%; 
+}
+.organizers-wrapper {
+    width: 84%;  
+}
 
-    .organizer-block {
-        width: 100%;
-        display: block;
-    }
+.organizer-block {
+    width: 100%;
+    display: block;
+}
 
-    .organizer-block:last-child {
-     margin-left: 0;
-     margin-top: 70px;
-    }
+.organizer-block:last-child {
+   margin-left: 0;
+   margin-top: 70px;
+}
 
-    .slide.schedule {
-        display: none;
-    }
-    .slide.event {
-     height: auto;
-    }
+.slide.schedule {
+    display: none;
+}
+.slide.event {
+   height: auto;
+}
 
-    .event .page-background {
-        height: 150px;
-    }
-    .event-text {
-        width: 84%;
-    }
-    .schedule-2 .page-background {
-        height: 237px;
-        -webkit-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
+.event .page-background {
+    height: 150px;
+}
+.event-text {
+    width: 84%;
+}
+.schedule-2 .page-background {
+    height: 237px;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
-    .hidden-heading {
-        display: block;
-        margin-top: 50px;
-    }
+.hidden-heading {
+    display: block;
+    margin-top: 50px;
+}
 
-    .location-heading {
-        display: none;
-    }
+.location-heading {
+    display: none;
+}
 
-    .location-icons {
-        position: relative;
-    }
-    .location-icons div {
-        width: 100%;
-        display: inline-block;
-        margin-top: 90px; 
-        vertical-align: top;
-        margin-right: 0;
-    }
+.location-icons {
+    position: relative;
+}
+.location-icons div {
+    width: 100%;
+    display: inline-block;
+    margin-top: 90px; 
+    vertical-align: top;
+    margin-right: 0;
+}
 
-    .photo img {
-        padding-top: 0;
-    }
+.photo img {
+    padding-top: 0;
+}
 
-    .white-waves img {
-        padding-top: 0;
-    }
+.white-waves img {
+    padding-top: 0;
+}
 
-    .location-icons .right-arrow,
-    .location-icons .left-arrow {
-        position: absolute;
-        width: 23px;
-    }
+.location-icons .right-arrow,
+.location-icons .left-arrow {
+    position: absolute;
+    width: 23px;
+}
 
-    .location-icons .right-arrow {
-     right: 0;
-     bottom: 100px;
-    }
-    .right-arrow img,
-    .left-arrow img {
-        padding-top: 100px;
-    }
+.location-icons .right-arrow {
+   right: 0;
+   bottom: 100px;
+}
+.right-arrow img,
+.left-arrow img {
+    padding-top: 100px;
+}
 
 }
 
@@ -979,33 +979,34 @@ p.sponsor-type {
         font-size: 30px;
         margin-top: 40px;
     }
-    .schedule-2 .page-background {
-        -webkit-background-size: 100% 100%;
-             -o-background-size: 100% 100%;
-                background-size: 100% 100%;
-    }
+
 }
 
-@media (min-width: 1480px){
+@media (min-width: 1480px) {
     .speakers-wrapper {
-    width: 70%;
+        width: 70%;
     }
     .slide.schedule  {
         height: 100%;
     }
     .slide.intro {
-      height: 100%;
-      width: 100%;  
+        height: 100%;
+        width: 100%;  
     }
-    .shedule-2 .page-background{
-        background-position: center bottom;
+    .schedule-2 .page-background {
+        background-position: left bottom;
+    }
+
+    .partners {
+        width: 70%;
+        margin: 0 auto;
     }
 }
 
 @media (min-width: 1680px){
     .page-background {
-    -webkit-background-size: cover;
-    background-size: cover;
+        -webkit-background-size: cover;
+        background-size: cover;
     }
 }
 
