@@ -37,7 +37,7 @@ body {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: auto 100%;
          -o-background-size: auto 100%;
@@ -157,9 +157,6 @@ body {
 .intro .page-background {
     padding-top: 60px;
     background-image: url("../img/react.jpg");
-    -webkit-background-size: auto 100%;
-         -o-background-size: auto 100%;
-            background-size: auto 100%;
 }
 
 .logo {
@@ -604,6 +601,7 @@ li:last-child {
     left: 0;
     height: 316px;
     background-image: url("../img/schedule-small.jpg");
+    background-size: cover;
     z-index: -1;
 }
 
@@ -981,18 +979,33 @@ p.sponsor-type {
         font-size: 30px;
         margin-top: 40px;
     }
+    .schedule-2 .page-background {
+        -webkit-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+                background-size: 100% 100%;
+    }
 }
 
 @media (min-width: 1480px){
     .speakers-wrapper {
     width: 70%;
     }
+    .slide.schedule  {
+        height: 100%;
+    }
+    .slide.intro {
+      height: 100%;
+      width: 100%;  
+    }
+    .shedule-2 .page-background{
+        background-position: center bottom;
+    }
 }
 
 @media (min-width: 1680px){
     .page-background {
-    -webkit-background-size: cover ;
-    background-size: cover ;
+    -webkit-background-size: cover;
+    background-size: cover;
     }
 }
 
