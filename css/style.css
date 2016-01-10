@@ -348,18 +348,6 @@ li:last-child {
     box-sizing: border-box;
 }
 
-.event .page-background {
-    height: 214px;
-    background-image: url("../img/event.jpg");
-    -webkit-background-size: cover ;
-    -o-background-size: cover ;
-    background-size: cover ;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
 .event .main-heading {
     padding: 35px 0 50px 0;
 }
@@ -369,7 +357,7 @@ li:last-child {
     font-family: "latolight";
     font-weight: normal;
     color: #000;
-    margin: 110px auto 30px auto;
+    margin: 30px auto 30px auto;
     width: 84%;
 }
 
@@ -592,18 +580,9 @@ li:last-child {
 /* schedule second slide */
 
 .slide.schedule-2 {
-    padding-top: 336px;
+    padding-top: 30px;
 }
 
-.schedule-2 .page-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 316px;
-    background-image: url("../img/schedule-small.jpg");
-    background-size: cover;
-    z-index: -1;
-}
 
 .time {
     color: #1bcd7c;
