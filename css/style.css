@@ -160,15 +160,7 @@ body {
 }
 
 .logo {
-    width: 120px;
-    height: 108px;
-    background-image: url("../img/logo.png");
-    background-repeat: no-repeat;
-    margin: 0 auto;
     padding-bottom: 70px;
-    -webkit-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
 }
 
 .header {
@@ -195,7 +187,7 @@ body {
     text-align: center;
     margin: 0;
     letter-spacing: 0.05em;
-    width: 60%;
+    width: 62%;
     vertical-align: top;
 }
 
@@ -221,15 +213,16 @@ body {
 }
 
 .right {
-    width: 20%;
+    width: 19%;
 }
 
 .left-waves {
-    width: 20%;
+    width: 18%;
     height: 32px;
     z-index: 2;
     background-image: url("../img/wave.png");
     background-repeat: repeat-x;
+    margin-right: 1%;
 }
 
 .left {
@@ -238,7 +231,8 @@ body {
 
 .right-waves {
     margin-top: 2px;
-    width: 30%;
+    width: 28%;
+    margin-left: 2%;
     height: 32px;
     z-index: 2;
     background-image: url("../img/wave.png");
@@ -261,6 +255,17 @@ body {
     padding: 15px 0 15px 0;
     letter-spacing: 0.075em;
     margin: 0 auto;
+}
+
+.intro .green-button {
+    position: absolute;
+    bottom: 140px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);   
 }
 
 .green-button span {
@@ -389,6 +394,7 @@ li:last-child {
 .slide.location {
     font-size: 0px;
     height: 100%;
+    min-height: 600px;
 }
 
 .location .page-background {
@@ -558,6 +564,10 @@ li:last-child {
 
 .social-small img {
     margin: 0 6px 6px 0;
+}
+
+.speakers .green-button {
+    cursor: pointer;
 }
 
 .green-button.white-text {
