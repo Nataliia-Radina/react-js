@@ -129,6 +129,7 @@ body {
 
 .mobile-menu .green-button {
     margin: 60px auto;
+    height: 45px;
     text-transform: uppercase;
     font-family: "latosemibold";
     position: absolute;
