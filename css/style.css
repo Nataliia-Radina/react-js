@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 body { 
     font-family: "latolight";
     font-size: 18px;
@@ -139,6 +140,7 @@ body {
     -ms-transform: translate(-50%, 0);
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
+    height: 45px;
 }
 
 .exit {
@@ -353,16 +355,14 @@ li:last-child {
     box-sizing: border-box;
 }
 
-.event .main-heading {
-    padding: 35px 0 50px 0;
-}
+
 
 .mid-heading {
     font-size: 60px;
     font-family: "latolight";
     font-weight: normal;
     color: #000;
-    margin: 30px auto 30px auto;
+    margin: 0 auto 30px auto;
     width: 84%;
 }
 
@@ -543,8 +543,7 @@ li:last-child {
     text-align: center;
     font-family: "latolight";
     font-size: 18px;
-    margin: 30px 0;
-    
+    margin: 30px 0;   
 }
 
 .person-info {
@@ -564,10 +563,6 @@ li:last-child {
 
 .social-small img {
     margin: 0 6px 6px 0;
-}
-
-.speakers .green-button {
-    cursor: pointer;
 }
 
 .green-button.white-text {
