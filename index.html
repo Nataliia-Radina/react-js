@@ -5,20 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>React Amsterdam</title>
 	<link rel="stylesheet" href="css/style.css">
-	 <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(52.3997947,4.8926053999999795),
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
-	<script src="js/script.js"></script>
 	<body>
 		<!--  wrapper begin -->
 		<div class="wrapper">
@@ -38,8 +24,8 @@
 								<li><a href="#" class="mobile-link">Sponsors</a></li>
 								<li><a href="#" class="mobile-link">Contact us</a></li>
 							</ul>
+							<a href="#" class="mob-ticket-btn if-hovered">Buy ticket</a>
 						</nav>
-						<a href="#" class="green-button">Buy ticket</a>
 					</div>
 					<div class="hamburger-menu" id="menu-button">
 						<div class="hamburger-background"></div>
@@ -54,7 +40,7 @@
 							<h1 class="main-heading">React Amsterdam</h1>
 							<div class="inline left"></div><p class="inline date-place">16 of April, <span>NDSM Werf</span></p><div class="inline right-waves"></div>
 						</header>
-						<div class="button-wrapper"><a href="#" class="green-button"><span>Buy </span>ticket</a></div>
+						<div class="button-wrapper"><a href="#" class="green-button if-hovered"><span>Buy </span>ticket</a></div>
 					</div>
 				</section>
 				<!--  End of first slide  -->
@@ -66,8 +52,12 @@
 					<h3 class="mid-heading">Full day conference of all things react</h3>
 					<p class="event-text">Mobile developers are building iOS (and Android soon too) apps using React Native, desktop applications are being built with React on Electron and even D3 can be used with React. 
 						As the world moves towards a highly interactive web, HTTP is being replaced with WebSockets and realtime communication is becoming a standard. We need a new solution that will embrace the realtime nature of the new generation of Web. </p>
-						<div class="follow-us-block"><p class="follow-us">Follow us</p>
-							<div class="social-icons"><a href="#"><img src="img/twitter.png"></a><a href="#"><img src="img/facebook.png"></a></div></div>
+						<div class="follow-us-block">
+						<p class="follow-us">Follow us</p>
+							<div class="social-icons">
+							<a href="#"><img class="if-hovered" src="img/twitter.png"></a>
+							<a href="#"><img class="if-hovered" src="img/facebook.png"></a>
+							</div></div>
 						</section>
 
 						<!--  End of event slide  -->
@@ -109,7 +99,10 @@
 											<p class="person-company">Mozilla</p>
 											<p class="person-place">Berlin, Germany</p>
 											<p class="person-info">Jouni is a web craftsman and minimalist who believes great code reads like a story. He finds beauty in creating solutions to stand the test of time.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
+											</div>
 										</div>
 									</div>
 									<div class="speaker-block">
@@ -119,7 +112,10 @@
 											<p class="person-company">OMNI</p>
 											<p class="person-place">Bristol, England</p>
 											<p class="person-info">Mobile Solution Architect at EPAM, JavaScript and Web Standards lover, IoT enthusiast.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
+											</div>
 										</div>
 									</div>
 									<div class="speaker-block last-in-raw">
@@ -129,7 +125,10 @@
 											<p class="person-company">LedDesign</p>
 											<p class="person-place">Amsterdam, Netherlands</p>
 											<p class="person-info">Tobias is a web performance evangelist & consultant at Akamai. He creates DevOps tools, image optimization algorithms & speaks at conferences. He's a proud dad, mindful veggy & music lover.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
+											</div>
 										</div>
 									</div>
 									<div class="speaker-block">
@@ -139,7 +138,10 @@
 											<p class="person-company">Google</p>
 											<p class="person-place">Berlin, Germany</p>
 											<p class="person-info">Jouni is a web craftsman and minimalist who believes great code reads like a story. He finds beauty in creating solutions to stand the test of time. Jouni is known for ferociously attacking the difficult problems.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
+											</div>
 										</div>
 									</div>
 									<div class="speaker-block">
@@ -149,7 +151,10 @@
 											<p class="person-company">OMNI</p>
 											<p class="person-place">Bristol, England</p>
 											<p class="person-info">Koen is a web developer with a passion for great code and the open web. He is one of the leads at Coosto, where he works on big web applications for big companies. Koen loves learning about code by writing it a lot, and hopes to be able to share some knowledge in the process.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
+											</div>
 										</div>
 									</div>
 									<div class="speaker-block last-in-raw">
@@ -159,7 +164,9 @@
 											<p class="person-company">LedDesign</p>
 											<p class="person-place">Amsterdam, Netherlands</p>
 											<p class="person-info">Tobias is a web performance evangelist & consultant at Akamai. He creates DevOps tools, image optimization algorithms & speaks at conferences. He's a proud dad, mindful veggy & music lover.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a></div>
 										</div>
 									</div>
 									<div class="speaker-block hidden-speaker">
@@ -169,7 +176,11 @@
 											<p class="person-company">Mozilla</p>
 											<p class="person-place">Berlin, Germany</p>
 											<p class="person-info">Jouni is a web craftsman and minimalist who believes great code reads like a story. He finds beauty in creating solutions to stand the test of time.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#">
+											<img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
+											</div>
 										</div>
 									</div>
 									<div class="speaker-block hidden-speaker">
@@ -179,11 +190,14 @@
 											<p class="person-company">OMNI</p>
 											<p class="person-place">Bristol, England</p>
 											<p class="person-info">Mobile Solution Architect at EPAM, JavaScript and Web Standards lover, IoT enthusiast.</p>
-											<div class="social-small"><a href="#"><img src="img/twitter-small.png" alt=""></a><a href="#"><img src="img/facebook-small.png" alt=""></a></div>
+											<div class="social-small">
+											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
+											</div>
 										</div>
 									</div>
 								</div>
-								<a href="#" class="green-button white-text" id="speakers-button"><span id="btn-bold">All</span> speakers</a>
+								<a href="#" class="if-hovered green-button white-text" id="speakers-button"><span id="btn-bold">All</span> speakers</a>
 							</section>
 							<!--  End of speakers slide  -->
 
@@ -228,7 +242,7 @@
 									<p class="schedule-name">Dan Hughes</p>
 									<p class="schedule-heading">Building &lt;x-nes&gt;</p>
 									<p class="schedule-info">30 years ago the Nintendo Entertainment System could be found in every home, now it can be embedded into every web page using the awesome power of web components. In this talk I will share what I learned from turning an old video game console into a web component.</p>
-									<a href="#" class="green-button white-text"><span>Call </span>for <span>speakers</span></a>
+									<a href="#" class="green-button white-text if-hovered"><span>Call </span>for <span>speakers</span></a>
 								</section>
 								<!--  End of second schedule slide  -->
 
@@ -271,7 +285,7 @@
 												<p class="organizer-email">jimmy_jonge@gmail.com</p>
 												<p class="organizer-info">3 (6079) 1234990</p>
 												<p class="organizer-info">Skype: jimmy_66</p>
-												<div class="social-small"><a href="#"><img src="img/twitter-org.png" alt=""></a><a href="#"><img src="img/facebook-org.png" alt=""></a></div>
+												<div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
 
 											</div>
 											<div class="organizer-block">
@@ -282,12 +296,12 @@
 													<p class="organizer-email">mr_mrgn@gmail.com</p>
 													<p class="organizer-info">6 (600) 65389</p>
 													<p class="organizer-info">Skype: mr_mrgn</p>
-													<div class="social-small"><a href="#"><img src="img/twitter-org.png" alt=""></a><a href="#"><img src="img/facebook-org.png" alt=""></a></div>
+													<div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
 
 												</div>
 											</div>
 											<div class="follow-us-block"><p class="follow-us">Follow us</p>
-												<div class="social-icons"><a href="#"><img src="img/twitter.png"></a><a href="#"><img src="img/facebook.png"></a></div>
+												<div class="social-icons"><a href="#"><img class="if-hovered" src="img/twitter.png"></a><a href="#"><img class="if-hovered" src="img/facebook.png"></a></div>
 											</div>
 										</section>
 										<!--  End of organizers slide  -->
@@ -308,11 +322,24 @@
 
 											</ul>
 										</nav>
-										<a href="#" ><div class="green-button" id="footer-button"><p>Buy ticket</p></div></a>
+										<a href="#" ><div class="green-button footer-btn" id="footer-button"><p>Buy ticket</p></div></a>
 									</footer>
 									<!--  End of footer  -->
 								</div>
 								<!--  End of wrapper  -->
-
+	 <script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+		function initialize() {
+			var mapCanvas = document.getElementById('map');
+			var mapOptions = {
+				center: new google.maps.LatLng(52.3997947,4.8926053999999795),
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(mapCanvas, mapOptions)
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<script src="js/script.js"></script>
 							</body>
 							</html>

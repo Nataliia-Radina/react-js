@@ -16,7 +16,7 @@ function hideMenu() {
 	document.getElementById("logo-green").style.display = "none";
 }
 
-function showSpeakers(e) {
+function showSpeakers(e) {           
 	e.preventDefault();
 	var speakers = document.getElementsByClassName("hidden-speaker");
 	if (document.getElementById("btn-bold").innerHTML == "All") {
