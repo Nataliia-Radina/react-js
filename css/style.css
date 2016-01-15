@@ -65,8 +65,7 @@ body {
 .hamburger-background {
     width: 86px;
     height: 86px;
-    background-color: #000;
-    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.6)
 }
 
 .hamburger {
@@ -76,7 +75,6 @@ body {
     background-repeat: no-repeat;
     width: 86px;
     height: 86px;
-    opacity: 1;
     z-index: 5;
     top: 0;
     left: 0;
@@ -105,14 +103,13 @@ body {
 }
 
 .nav-mobile {
-    background-color: #000;
-    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.9);
     padding-top: 50px;
-    padding-bottom: 150px;
+    padding-bottom: 25px;
 }
 
 .mobile-menu li {
- padding: 15px;
+    padding: 15px;
 }
 
 .mobile-link {
@@ -120,26 +117,27 @@ body {
     color: #fff;
     font-size: 20px;
     font-family: "latobold";
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
+
 .mobile-link:hover {
     text-decoration: underline;
 }
 
-.mobile-menu .green-button {
-    margin: 60px auto;
+.mob-ticket-btn {
+    margin: 25px auto;
     height: 45px;
     text-transform: uppercase;
     font-family: "latosemibold";
-    position: absolute;
-    top: 360px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
+    background-color: #1bce7c;
+    color: #000;
+    text-decoration: none;
+    width: 360px;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    letter-spacing: 0.075em;
+    display: block;
 }
 
 .exit {
@@ -156,12 +154,14 @@ body {
 
 /* intro section */
 .intro .page-background {
+    position: relative;
     padding-top: 60px;
     background-image: url("../img/react.jpg");
+    padding-bottom: 350px;
 }
 
 .logo {
-    padding-bottom: 70px;
+    padding-bottom: 65px;
 }
 
 .header {
@@ -175,7 +175,7 @@ body {
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
-    padding: 22px 0 32px 0;
+    padding: 20px 0 25px 0;
     margin: 0;
     letter-spacing: 0.1em;   
 }
@@ -241,10 +241,6 @@ body {
     background-repeat: repeat-x;
 }
 
-.button-wrapper {
-    padding: 155px 0 140px 0; 
-}
-
 .green-button {
     display: block;
     background-color: #1bce7c;
@@ -259,15 +255,29 @@ body {
     margin: 0 auto;
 }
 
+.if-hovered {
+    transition: all 0.2s linear;
+}
+
+
+a.if-hovered:hover {
+    -ms-transform: scale(1.07, 1.07); /* IE 9 */
+    -webkit-transform: scale(1.07, 1.07); /* Safari */
+    transform: scale(1.07, 1.07);
+}
+
+img.if-hovered:hover {
+    -ms-transform: scale(1.07, 1.07); /* IE 9 */а
+    -webkit-transform: scale(1.07, 1.07); /* Safari */
+    transform: scale(1.07, 1.07);
+}
+
 .intro .green-button {
-    position: absolute;
-    bottom: 140px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    -o-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);   
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 140px; 
+    position: absolute
 }
 
 .green-button span {
@@ -283,17 +293,20 @@ body {
     z-index: 3;
 }
 
-.footer .green-button {
+.footer-btn {
     display: inline-block;
     position: absolute;
     right: 0;
     width: 12%;
     margin: 0;
     bottom: 0;
-    opacity: 1;
     min-width: 100px;
     padding: 0;
     height: 100%;
+}
+
+.footer-btn:hover>p {
+    font-size: 13px;
 }
 
 .green-button p {
@@ -308,8 +321,7 @@ body {
 .nav {
     position: relative;
     height: 100%;
-    opacity: 0.7;
-    background-color: #000;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
@@ -791,7 +803,6 @@ p.sponsor-type {
 
 @media (max-width: 760px){
 
-
     .organizers-wrapper {
         width: 80%;
         margin: 0 auto; 
@@ -801,19 +812,24 @@ p.sponsor-type {
 }
 
 @media (max-width: 700px){
+
     img {
         max-width: 100%;
     }
+
     .mobile-menu, 
     .hamburger-menu {
         display: block;
     }
+
     .intro .page-background {
         padding-top: 90px;
     }
+
     .main-heading {
      font-size: 66px;
-     }
+    }
+
      .black-heading {
         font-size: 60px;  
     }
@@ -957,6 +973,11 @@ p.sponsor-type {
         font-size: 26px;
     }
 
+    .mob-ticket-btn {
+       width: 280px;
+        font-size: 26px; 
+    }
+
     .mid-heading {
         font-size: 40px;
         margin-top: 40px;
@@ -969,6 +990,7 @@ p.sponsor-type {
     .main-heading {
         font-size: 40px;
     }
+
     .black-heading {
         font-size: 36px;
     }
