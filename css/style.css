@@ -383,7 +383,7 @@ li:last-child {
 
 .event-text {
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     font-size: 24px;
 }
 
@@ -400,7 +400,7 @@ li:last-child {
 
 .follow-us {
     text-align: center;
-    margin: 50px 0 15px 0;
+    margin-bottom: 15px;
 }
 
 .social-icons {
@@ -731,6 +731,7 @@ p.sponsor-type {
     width: 38%;
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 50px;
 }
 
 .organizer-block:last-child {
