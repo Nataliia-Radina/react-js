@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 body { 
     font-family: "latolight";
     font-size: 18px;
@@ -386,6 +387,13 @@ li:last-child {
     font-size: 24px;
 }
 
+<<<<<<< HEAD
+=======
+.event-text a, .event-text a:visited {
+    color: #1bcd7c;
+}
+
+>>>>>>> master
 .follow-us-block {
     padding-bottom: 50px;
 }
@@ -412,6 +420,7 @@ li:last-child {
 }
 
 .location .page-background {
+<<<<<<< HEAD
     padding-top: 30px;
     background-image: url("../img/location.jpg");
     width: 50%;
@@ -419,6 +428,19 @@ li:last-child {
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+=======
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+
+.single-item {
+    height: 100%;
+    overflow: hidden;
+}
+
+.single-item img {
+    max-width: 100%;
 }
 
 .location-text {
@@ -446,57 +468,47 @@ li:last-child {
     letter-spacing: 0.075em; 
 }
 
-.location-icons div {
-    display: inline-block;
-    margin-right: 10.975%;
-    margin-top: 110px; 
-    vertical-align: top;
-}
-
-.location-icons img {
-    max-width: 100%;
-}
-
-.location-icons div:last-child {
-    margin-right: 0;
-}
-
-.photo {
-    width: 17%;
-}
-
-.white-waves {
-    width: 24%;
-}
-
-.map-icon {
-    width: 11.5%;
-}
-.photo img {
-    padding-top: 35px;
-}
-
-.white-waves img {
-    padding-top: 35px;
-}
-
-.right-arrow,
-.left-arrow {
-    width: 1.8%;
-}
-
-.right-arrow img,
-.left-arrow img {
-    padding-top: 100px;
-    display: none;
-}
-
 .map-wrap{
-    overflow:hidden;
     height:100%;
     width: 50%;
     display: inline-block;
 }
+
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 23px;
+    height: 41px;
+    padding: 0;
+    margin-top: -20px\9; /*lte IE 8*/
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+.slick-prev
+{
+    z-index: 500;
+    left: 25px;
+    background-image: url("../img/arrow-left.png");
+}
+
+
+.slick-next
+{
+    right: 25px;
+    background-image: url("../img/arrow-right.png");
+    z-index: 500;
+}
+
+
 
 
 /* speakers section */

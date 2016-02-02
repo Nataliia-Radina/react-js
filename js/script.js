@@ -2,6 +2,12 @@ window.addEventListener('load', function() {
 	document.getElementById("menu-button").addEventListener("click", showMenu);
 	document.getElementById("exit").addEventListener("click", hideMenu);
 	document.getElementById("speakers-button").addEventListener("click", showSpeakers);
+	$('.single-item').slick({
+		infinite: true,
+		speed: 300,
+		slidesToShow: 1,
+		autoplay: true
+	});
 });
 
 function showMenu() {	
@@ -16,7 +22,8 @@ function hideMenu() {
 	document.getElementById("logo-green").style.display = "none";
 }
 
-function showSpeakers(e) {           
+
+function showSpeakers(e) {
 	e.preventDefault();
 	var speakers = document.getElementsByClassName("hidden-speaker");
 	if (document.getElementById("btn-bold").innerHTML == "All") {
@@ -31,3 +38,4 @@ function showSpeakers(e) {
 		document.getElementById("btn-bold").innerHTML = "All"
 	}
 }
+
