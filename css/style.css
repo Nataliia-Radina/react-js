@@ -387,6 +387,10 @@ li:last-child {
     font-size: 24px;
 }
 
+.event-text a, .event-text a:visited {
+    color: #1bcd7c;
+}
+
 .follow-us-block {
     padding-bottom: 50px;
 }
