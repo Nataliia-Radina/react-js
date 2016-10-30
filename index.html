@@ -1,422 +1,612 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>React Amsterdam</title>
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-	<body>
-		<!--  wrapper begin -->
-		<div class="wrapper">
-			<!-- main begin -->
-			<main class="main" role="main">
-				<!-- first slide begin -->
-				<section class="slide intro">
-					<!-- mobile-menu begin -->
-					<div class="mobile-menu" id="mobile-menu">
-						<div class="exit" id="exit"></div>
-						<nav class="nav-mobile">
-							<ul>
-								<li><a href="#" class="mobile-link">The event</a></li>
-								<li><a href="#" class="mobile-link">Location</a></li>
-								<li><a href="#" class="mobile-link">Speakers</a></li>
-								<li><a href="#" class="mobile-link">Schedule</a></li>
-								<li><a href="#" class="mobile-link">Sponsors</a></li>
-								<li><a href="#" class="mobile-link">Contact us</a></li>
-							</ul>
-							<a href="#" class="mob-ticket-btn if-hovered">Buy ticket</a>
-						</nav>
-					</div>
-					<div class="hamburger-menu" id="menu-button">
-						<div class="hamburger-background"></div>
-						<div class="hamburger"></div>
-						<div class="logo-green" id="logo-green"></div>
-					</div>
-					<!-- mobile-menu begin -->
-					<div class ="page-background">
-						<div class="logo"><img src="img/logo.png" alt=""></div>
-						<header class="header">
-							<div class="inline left-waves"></div><p class="inline slogan">Full day conference of all things react</p><div class="inline right"></div>
-							<h1 class="main-heading">React Amsterdam</h1>
-							<div class="inline left"></div><p class="inline date-place">16 of April, <span>NDSM Werf</span></p><div class="inline right-waves"></div>
-						</header>
-						<div class="button-wrapper"><a href="#" class="green-button if-hovered"><span>Buy </span>ticket</a></div>
-					</div>
-				</section>
-				<!--  End of first slide  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Amsterdam</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="js/vendor/slick/slick.css"/>
 
-				<!-- event slide begin -->
-				<section class="slide event">
-					<a name="event"></a>
-					<h2 class="main-heading green-heading">The event</h2>
-					<h3 class="mid-heading">Full day conference of all things react</h3>
-					<p class="event-text">Mobile developers are building iOS (and Android soon too) apps using React Native, desktop applications are being built with React on Electron and even D3 can be used with React. 
-						As the world moves towards a highly interactive web, HTTP is being replaced with WebSockets and realtime communication is becoming a standard. We need a new solution that will embrace the realtime nature of the new generation of Web. </p>
-						<div class="follow-us-block">
-						<p class="follow-us">Follow us</p>
-							<div class="social-icons">
-							<a href="#"><img class="if-hovered" src="img/twitter.png"></a>
-							<a href="#"><img class="if-hovered" src="img/facebook.png"></a>
-					<p class="event-text">React Amsterdam is a celebration of three good things coming together: React.JS and spring in Amsterdam. Event will take place in the neighbourhood of abandoned shipbuilding factory in 10 minutes by ferry from Amsterdam Central station in the venue named <a href="http://pllek.nl">Pllek</a> (The Place in Dutch).</p>
-						<div class="follow-us-block">
-						<p class="follow-us">Follow us</p>
-							<div class="social-icons">
-							<a href="https://twitter.com/ReactAmsterdam"><img class="if-hovered" src="img/twitter.png"></a>
-							<a href="https://www.facebook.com/react.amsterdam/"><img class="if-hovered" src="img/facebook.png"></a>
-							</div></div>
-						</section>
+    <meta property="og:title" content="React Amsterdam Conference, April 16th" />
+    <meta property="og:description" content="Full day conference of all things React" />
+    <meta property="og:image" content="http://react-amsterdam.com/img/meta/react-amsterdam.jpg" />
 
-						<!--  End of event slide  -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ReactAmsterdam">
+    <meta name="twitter:creator" content="@ReactAmsterdam">
+    <body>
+        <!--  wrapper begin -->
+        <div class="wrapper">
+            <!-- main begin -->
+            <main class="main" role="main">
+                <!-- first slide begin -->
+                <section class="slide intro">
+                    <!-- mobile-menu begin -->
+                    <div class="mobile-menu" id="mobile-menu">
+                        <div class="exit" id="exit"></div>
+                        <nav class="nav-mobile">
+                            <ul>
+                                <li><a href="#location" class="mobile-link">Location</a></li>
+                                <li><a href="#speakers" class="mobile-link">Speakers</a></li>
+                                <!--<li><a href="#speakers" class="mobile-link">Schedule</a></li>-->
+                                <li><a href="#organizers" class="mobile-link">Contact us</a></li>
+                                <li><a href="#http://confcodeofconduct.com/" class="mobile-link">Code of conduct</a></li>
+                            </ul>
+                            <a href="http://react-amsterdam.eventbrite.com" class="mob-ticket-btn if-hovered">Buy ticket</a>
+                        </nav>
+                    </div>
+                    <div class="hamburger-menu" id="menu-button">
+                        <div class="hamburger-background"></div>
+                        <div class="hamburger"></div>
+                        <div class="logo-green" id="logo-green"></div>
+                    </div>
+                    <!-- mobile-menu begin -->
+                    <div class="page-background">
+                        <div class="logo"><img src="img/logo.png" alt=""></div>
+                        <header class="header">
+                            <div class="inline left-waves"></div>
+                            <p class="inline slogan">Full day conference of all things React</p>
 
-						<!-- location slide begin -->
-						<section class="slide location">
-							<a name="location"></a>
-							<div class="location-text">
-								<h2 class="main-heading">Location</h2>
-								<h3 class="location-heading">Amsterdam, NDSM Werf</h3>
-							</div>
-							<div class="page-background">
-							<div class="single-item">
-								<div><img src="img/location.jpg" alt=""></div>
-								<div><img src="img/schedule.jpg" alt=""></div>
-								<div><img src="img/react.jpg" alt=""></div>
-							</div>
-							</div>
-							<!-- map begin -->
-							<div class="map-wrap">
-								<div id="map" style="width:100%; height:100%;"></div>
-							</div>
+                            <div class="inline right"></div>
+                            <h1 class="main-heading">React Amsterdam</h1>
 
-						<!--  End of map  -->
-						</section>
-						<!--  End of location slide  -->
+                            <div class="inline left"></div>
+                            <p class="inline date-place">16 of April, <span>NDSM Werf</span></p>
 
-						<!-- speakers slide begin -->
-						<section class="slide speakers">
-							<a name="speakers">
-								<h2 class="main-heading green-heading">Speakers</h2>
-								<div class="speakers-wrapper">
-									<div class="speaker-block">
-										<div class="person-photo"><img src="img/speaker-1.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Jack Hartman</p>
-											<p class="person-company">Mozilla</p>
-											<p class="person-place">Berlin, Germany</p>
-											<p class="person-info">Jouni is a web craftsman and minimalist who believes great code reads like a story. He finds beauty in creating solutions to stand the test of time.</p>
-											<div class="social-small">
-											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
-											</div>
-										</div>
-									</div>
-									<div class="speaker-block">
-										<div class="person-photo"><img src="img/speaker-2.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Dan Hughes</p>
-											<p class="person-company">OMNI</p>
-											<p class="person-place">Bristol, England</p>
-											<p class="person-info">Mobile Solution Architect at EPAM, JavaScript and Web Standards lover, IoT enthusiast.</p>
-											<div class="social-small">
-											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
-											</div>
-										</div>
-									</div>
-									<div class="speaker-block last-in-raw">
-										<div class="person-photo"><img src="img/speaker-3.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Ryan Johnson</p>
-											<p class="person-company">LedDesign</p>
-											<p class="person-place">Amsterdam, Netherlands</p>
-											<p class="person-info">Tobias is a web performance evangelist & consultant at Akamai. He creates DevOps tools, image optimization algorithms & speaks at conferences. He's a proud dad, mindful veggy & music lover.</p>
-											<div class="social-small">
-											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
-											</div>
-										</div>
-									</div>
-									<div class="speaker-block">
-										<div class="person-photo"><img src="img/speaker-4.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Martin Shveller</p>
-											<p class="person-company">Google</p>
-											<p class="person-place">Berlin, Germany</p>
-											<p class="person-info">Jouni is a web craftsman and minimalist who believes great code reads like a story. He finds beauty in creating solutions to stand the test of time. Jouni is known for ferociously attacking the difficult problems.</p>
-											<div class="social-small">
-											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
-											</div>
-										</div>
-									</div>
-									<div class="speaker-block">
-										<div class="person-photo"><img src="img/speaker-5.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Rem Jonson</p>
-											<p class="person-company">OMNI</p>
-											<p class="person-place">Bristol, England</p>
-											<p class="person-info">Koen is a web developer with a passion for great code and the open web. He is one of the leads at Coosto, where he works on big web applications for big companies. Koen loves learning about code by writing it a lot, and hopes to be able to share some knowledge in the process.</p>
-											<div class="social-small">
-											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
-											</div>
-										</div>
-									</div>
-									<div class="speaker-block last-in-raw">
-										<div class="person-photo"><img src="img/speaker-6.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Greg Vossen</p>
-											<p class="person-company">LedDesign</p>
-											<p class="person-place">Amsterdam, Netherlands</p>
-											<p class="person-info">Tobias is a web performance evangelist & consultant at Akamai. He creates DevOps tools, image optimization algorithms & speaks at conferences. He's a proud dad, mindful veggy & music lover.</p>
-											<div class="social-small">
-											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a></div>
-										</div>
-									</div>
-									<div class="speaker-block hidden-speaker">
-										<div class="person-photo"><img src="img/speaker-1.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Jack Hartman</p>
-											<p class="person-company">Mozilla</p>
-											<p class="person-place">Berlin, Germany</p>
-											<p class="person-info">Jouni is a web craftsman and minimalist who believes great code reads like a story. He finds beauty in creating solutions to stand the test of time.</p>
-											<div class="social-small">
-											<a href="#">
-											<img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
-											</div>
-										</div>
-									</div>
-									<div class="speaker-block hidden-speaker">
-										<div class="person-photo"><img src="img/speaker-2.png"></div>
-										<div class="speaker-intro">
-											<p class="person-name">Dan Hughes</p>
-											<p class="person-company">OMNI</p>
-											<p class="person-place">Bristol, England</p>
-											<p class="person-info">Mobile Solution Architect at EPAM, JavaScript and Web Standards lover, IoT enthusiast.</p>
-											<div class="social-small">
-											<a href="#"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
-											<a href="#"><img class="if-hovered" src="img/facebook-small.png" alt=""></a>
-											</div>
-										</div>
-									</div>
-								</div>
-								<a href="#" class="if-hovered green-button white-text" id="speakers-button"><span id="btn-bold">All</span> speakers</a>
-							</section>
-							<!--  End of speakers slide  -->
+                            <div class="inline right-waves"></div>
+                        </header>
+                        <div class="button-wrapper"><a href="http://react-amsterdam.eventbrite.com"
+                         class="green-button if-hovered"><span>Buy </span>ticket</a>
+                     </div>
+                 </div>
+             </section>
+             <!--  End of first slide  -->
 
-							<!-- schedule slide begin -->
-							<section class="slide  schedule">
-								<div class="page-background">
-									<h2 class="main-heading">Schedule</h2>
-								</div>
-							</section>
-							<!--  End of schedule slide  -->
+             <!-- event slide begin -->
+             <section class="slide event">
+                <a name="event"></a>
 
-							<!-- schedule second slide begin -->
-							<section class="slide schedule-2">
-								<a name="shedule"></a>
-								<p class="time">9:00</p>
-								<p class="schedule-heading">Registration</p>
-								<p class="time">10:00</p>
-								<p class="schedule-heading">Opening</p>
-								<p class="time">10:30</p>
-								<div class="schedule-image"><img src="img/speaker-4.png" alt=""></div>
-								<p class="schedule-name">Martin Shveller</p>
-								<p class="schedule-heading">Show vs. tell in UX design</p>
-								<p class="schedule-info">We’ve all heard these “laws” of design: “People don’t read on the web.” “If you have to explain how to use your product, you’ve failed.” “A picture is worth a thousand words.” It seems like our job as designers is to make things as intuitive as possible, using as few words as possible so that the meaning is self-evident through our visual design. But does this always produce the best user experience? Is showing always better than telling? We’ll look at several examples of design from the real world, the web, and apps that use showing, telling, or both as a method for producing the best UX. Rather than just assuming one is always better than the other, learn how to choose the right approach for your particular design problem and users.</p>
-								<p class="time">11:10</p>
-								<div class="schedule-image"><img src="img/speaker-2.png" alt=""></div>
-								<p class="schedule-name">Jack Hartman</p>
-								<p class="schedule-heading">Will your JavaScript app still work in 2030?</p>
-								<p class="schedule-info">How will JavaScript be in 15 years? Will your code still work? Ours has to, so we are doing our very best to ensure that. Join me aboard my very opinionated time machine, and you'll learn how to avoid sprinkling magical unicorn powder in the wrong places, how to select the right gods, and how to still sleep without nightmares. In other words, you'll hear how we are trying to write a huge business-critical web app for the future.</p>
-								<p class="time">12:50</p>
-								<div class="schedule-image"><img src="img/speaker-5.png" alt=""></div>
-								<p class="schedule-name">Rem Jonson</p>
-								<p class="schedule-heading">Baby steps and why it's more important than your code skills</p>
-									<p class="schedule-info">In this talk I'd like to explain why many startups fail when trying to build a product with fancy code and a "scalable" solution before learning what business/design needs they're trying to solve. Actually, it's not only for startups, it's also for you, as designer or developer. Why we should understand our ideas is more likely to fail than succeed? This is for sure much more important than learning Material Design, ReactJS or any other buzzword of our field.</p>
-									<p class="time">13:30</p>
-									<div class="schedule-image"><img src="img/speaker-3.png" alt=""></div>
-									<p class="schedule-name">Royan Johnson</p>
-									<p class="schedule-heading">Type to the 7th dimension</p>
-									<p class="schedule-info">Today, the complexities of type design, type rendering, type readability on devices and type history have all entered the 7th dimension. We’ll see 70 minutes of information and around 700 slides compressed in an amusing 42 minutes.</p>
-									<p class="time">14:20</p>
-									<div class="schedule-image"><img src="img/speaker-2.png" alt=""></div>
-									<p class="schedule-name">Dan Hughes</p>
-									<p class="schedule-heading">Building &lt;x-nes&gt;</p>
-									<p class="schedule-info">30 years ago the Nintendo Entertainment System could be found in every home, now it can be embedded into every web page using the awesome power of web components. In this talk I will share what I learned from turning an old video game console into a web component.</p>
-									<a href="#" class="green-button white-text if-hovered"><span>Call </span>for <span>speakers</span></a>
-								</section>
-								<!--  End of second schedule slide  -->
+                <h2 class="main-heading green-heading">The event</h2>
 
-								<!-- sponsors slide begin -->
-								<section class="slide sponsors">
-									<a name="sponsors"></a>
-									<h2 class="main-heading green-heading">Sponsors</h2>
-									<p>Here are our partners that made this awesome experience possible:</p>
-									<img src="img/firefox.jpg" alt="">
-									<p class="sponsor-type">Gold sponsor</p>
-									<img src="img/booking-com.jpg" alt="">
-									<p class="sponsor-type">Silver sponsor</p>
-									<img src="img/dell.jpg" alt="">
-									<div class="partners">
-										<p class="sponsor-type">Partners</p>
-										<img src="img/microsoft.jpg" alt="">
-										<img src="img/avocode.jpg" alt="">
-										<img src="img/intel.jpg" alt="">
-										<img src="img/computerworld.jpg" alt="">
-										<img src="img/tnw.jpg" alt="">
-										<img src="img/ziggo.jpg" alt="">
-										<img src="img/front.jpg" alt="">
-										<img src="img/e-com.jpg" alt="">
-										<img src="img/futurice.jpg" alt="">
-									</div>
-									<div class="green-wave"><img src="img/waves-green.png" alt=""></div>
-								</section>
-								<!--  End of sponsors slide  -->
+                <h3 class="mid-heading">Full day conference of all things react</h3>
 
-								<!-- organizers slide begin -->
-								<section class="slide organizers">
-									<h2 class="main-heading black-heading">Organizers</h2>
-									<a name="organizers"></a>
-									<div class="organizers-wrapper">
-										<div class="organizer-block">
-											<div class="person-photo">
-												<img src="img/jim.png" alt=""></div>
-												<p class="person-name">Jim Kerry</p>
-												<p class="person-company">Google</p>
-												<p class="organizer-email">jimmy_jonge@gmail.com</p>
-												<p class="organizer-info">3 (6079) 1234990</p>
-												<p class="organizer-info">Skype: jimmy_66</p>
-												<div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
+                <p class="event-text">React Amsterdam is a celebration of good things coming together: React.JS that rocks and spring in Amsterdam that blossoms. Event will take place in the neighbourhood of abandoned shipbuilding factory in 10
+                    minutes by ferry from Amsterdam Central station in the venue named <a href="http://pllek.nl">Pllek</a>
+                    (The Place in Dutch).</p>
 
-											</div>
-											<div class="organizer-block">
-												<div class="person-photo">
-													<img src="img/morgan.png" alt=""></div>
-													<p class="person-name">Morgan Freeman</p>
-													<p class="person-company">Adobe</p>
-													<p class="organizer-email">mr_mrgn@gmail.com</p>
-													<p class="organizer-info">6 (600) 65389</p>
-													<p class="organizer-info">Skype: mr_mrgn</p>
-													<div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
+                    <div class="follow-us-block">
+                        <p class="follow-us">Follow us</p>
 
-												</div>
-											</div>
-											<div class="follow-us-block"><p class="follow-us">Follow us</p>
-												<div class="social-icons"><a href="#"><img class="if-hovered" src="img/twitter.png"></a><a href="#"><img class="if-hovered" src="img/facebook.png"></a></div>
-											</div>
-										</section>
-										<!--  End of organizers slide  -->
-
-									</main>
-									<!--  End of main  -->
-
-									<!-- footer begin -->
-									<footer class="footer">
-										<nav class="nav">
-											<ul>
-												<li><a href="#event" class="navigation-link">The event</a></li>
-												<li><a href="#location" class="navigation-link">Location</a></li>
-												<li><a href="#speakers" class="navigation-link">Speakers</a></li>
-												<li><a href="#shedule" class="navigation-link">Schedule</a></li>
-												<li><a href="#sponsors" class="navigation-link">Sponsors</a></li>
-												<li><a href="#organizers" class="navigation-link">Contact us</a></li>
-
-											</ul>
-										</nav>
-										<a href="#" ><div class="green-button footer-btn" id="footer-button"><p>Buy ticket</p></div></a>
-									</footer>
-									<!--  End of footer  -->
-								</div>
-								<!--  End of wrapper  -->
-												<img src="img/orgs/1.png" alt="">
-                                            </div>
-                                            <p class="person-name">Denis Radin</p>
-                                            <p class="person-company">Liberty Global</p>
-                                            <p class="organizer-email">denis.radin@gmail.com</p>
-                                            <p class="organizer-info">3 (6079) 1234990</p>
-                                            <p class="organizer-info">Skype: lp_funky</p>
-                                            <div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
-                                        </div>
-                                        <div class="organizer-block">
-                                            <div class="person-photo">
-                                                <img src="img/orgs/2.png" alt="">
-                                            </div>
-                                            <p class="person-name">Denis Radin</p>
-                                            <p class="person-company">Liberty Global</p>
-                                            <p class="organizer-email">denis.radin@gmail.com</p>
-                                            <p class="organizer-info">3 (6079) 1234990</p>
-                                            <p class="organizer-info">Skype: lp_funky</p>
-                                            <div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
-                                        </div>
-                                        </div>
-                                        <div class="organizers-wrapper">
-                                        <div class="organizer-block">
-                                            <div class="person-photo">
-                                                <img src="img/orgs/3.png" alt="">
-                                            </div>
-                                            <p class="person-name">Denis Radin</p>
-                                            <p class="person-company">Liberty Global</p>
-                                            <p class="organizer-email">denis.radin@gmail.com</p>
-                                            <p class="organizer-info">3 (6079) 1234990</p>
-                                            <p class="organizer-info">Skype: lp_funky</p>
-                                            <div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
-                                        </div>
-                                        <div class="organizer-block">
-                                            <div class="person-photo">
-                                                <img src="img/orgs/4.png" alt="">
-                                            </div>
-                                            <p class="person-name">Denis Radin</p>
-                                            <p class="person-company">Liberty Global</p>
-                                            <p class="organizer-email">denis.radin@gmail.com</p>
-                                            <p class="organizer-info">3 (6079) 1234990</p>
-                                            <p class="organizer-info">Skype: lp_funky</p>
-                                            <div class="social-small"><a href="#"><img class="if-hovered" src="img/twitter-org.png" alt=""></a><a href="#"><img class="if-hovered" src="img/facebook-org.png" alt=""></a></div>
-                                        </div>
-                                    </div>
-                                    <div class="follow-us-block"><p class="follow-us">Follow us</p>
-                                        <div class="social-icons"><a href="https://twitter.com/ReactAmsterdam"><img class="if-hovered" src="img/twitter.png"></a><a href="https://www.facebook.com/react.amsterdam/"><img class="if-hovered" src="img/facebook.png"></a></div>
-                                    </div>
-                                </section>
-                                <!--  End of organizers slide  -->
-
-                            </main>
-                            <!--  End of main  -->
-
-                            <!-- footer begin -->
-                            <footer class="footer">
-                                <nav class="nav">
-                                    <ul>
-                                        <li><a href="#event" class="navigation-link">The event</a></li>
-                                        <li><a href="#location" class="navigation-link">Location</a></li>
-                                        <li><a href="#speakers" class="navigation-link">Speakers</a></li>
-                                        <li><a href="#shedule" class="navigation-link">Schedule</a></li>
-                                        <li><a href="#sponsors" class="navigation-link">Sponsors</a></li>
-                                        <li><a href="#organizers" class="navigation-link">Contact us</a></li>
-                                    </ul>
-                                </nav>
-                                <a href="#" ><div class="green-button footer-btn" id="footer-button"><p>Buy ticket</p></div></a>
-                            </footer>
-                            <!--  End of footer  -->
+                        <div class="social-icons">
+                            <a href="https://twitter.com/ReactAmsterdam"><img class="if-hovered" src="img/twitter.png"></a>
+                            <a href="https://www.facebook.com/react.amsterdam/"><img class="if-hovered" src="img/facebook.png"></a>
                         </div>
-                        <!--  End of wrapper  -->
-	 <script src="https://maps.googleapis.com/maps/api/js"></script>
-	<script>
-		function initialize() {
-			var mapCanvas = document.getElementById('map');
-			var mapOptions = {
-				center: new google.maps.LatLng(52.3997947,4.8926053999999795),
-				zoom: 15,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			var map = new google.maps.Map(mapCanvas, mapOptions)
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
-	<script src="js/script.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="slick/slick.min.js"></script>
-							</body>
-							</html>
+                    </div>
+                </section>
+
+                <!--  End of event slide  -->
+
+                <!-- location slide begin -->
+                <section class="slide location">
+                    <a name="location"></a>
+
+                    <div class="location-text">
+                        <h2 class="main-heading">Location</h2>
+
+                        <h3 class="location-heading">Amsterdam, NDSM Werf</h3>
+                    </div>
+                    <div class="page-background">
+                        <div class="single-item">
+                            <div style="background-image: url('img/location/location.jpg');"></div>
+                            <div style="background-image: url('img/location/location0.jpg');"></div>
+                            <div style="background-image: url('img/location/location1.jpg');"></div>
+                            <div style="background-image: url('img/location/location2.jpg');"></div>
+                            <div style="background-image: url('img/location/location3.jpg');"></div>
+                            <div style="background-image: url('img/location/location4.jpg');"></div>
+                            <div style="background-image: url('img/location/location5.jpg');"></div>
+                            <div style="background-image: url('img/location/location6.jpg');"></div>
+                        </div>
+                    </div>
+                    <!-- map begin -->
+                    <div class="map-wrap">
+                        <div id="map" style="width:100%; height:100%;"></div>
+                    </div>
+
+                    <!--  End of map  -->
+                </section>
+                <!--  End of location slide  -->
+
+                <!-- speakers slide begin -->
+                <section class="slide speakers">
+                    <a name="speakers">
+                        <h2 class="main-heading green-heading">Speakers</h2>
+
+                        <div class="speakers-wrapper">
+                            <div class="speaker-block">
+                                <div class="person-photo"><img src="img/speakers/tadeu.png"></div>
+                                <div class="speaker-intro">
+                                    <p class="person-name">Tadeu Zagallo</p>
+
+                                    <p class="person-company">Facebook, London</p>
+
+                                    <p class="person-place">React Native Architecture Overview</p>
+
+                                    <p class="person-info">Software Engineer at Facebook who works on React Native performance. He will talk about React Native architecture and best practices to get all the benefits of using the platform.</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/tadeuzagallo"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                        <a href="https://github.com/tadeuzagallo"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block">
+                                <div class="person-photo"><img src="img/speakers/jcharles.png"></div>
+                                <div class="speaker-intro">
+                                    <p class="person-name">Jamis Charles</p>
+
+                                    <p class="person-company">PayPal, San Jose</p>
+
+                                    <p class="person-place">Migrating safely to React</p>
+
+                                    <p class="person-info">You love React. You want to rewrite your whole app in React right now. But you have millions of paying users, and maintaining a stable app is absolutely critical. How do you migrate now and optimize for future change?</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/jamischarles"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                        <a href="https://github.com/jamischarles"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block">
+                                <div class="person-photo"><img src="img/speakers/sanders.png"></div>
+                                <div class="speaker-intro">
+                                    <p class="person-name">Sven Anders Robbestad</p>
+
+                                    <p class="person-company">Inmeta Consulting AS, Oslo</p>
+
+                                    <p class="person-place">Mastering server-rendered apps</p>
+
+                                    <p class="person-info">Creating a fully server-rendered app is perhaps the most intimidating challenge a React dev faces. This talk will show you how to wrap your mind around the React, Express, shared routing and data flow Redux and come out the other end with a fully realized server-rendered app.</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/svenardocom"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                        <a href="https://github.com/svenanders"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block">
+                                <div class="person-photo"><img src="img/speakers/jfranklin.png"></div>
+                                <div class="speaker-intro">
+                                    <p class="person-name">Jack Franklin</p>
+
+                                    <p class="person-company">Pusher, London</p>
+
+                                    <p class="person-place">Testing React applications</p>
+
+                                    <p class="person-info">We'll discuss the best tooling and approaches for building ReactJS applications in the NodeJS environment and in the browser using React TestUtils and other third party libraries that make it easy to test your components. We'll see how to build components in a way that makes them more maintainable, testable and easier to work with.</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/jack_franklin"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                        <a href="https://github.com/jackfranklin"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-block">
+                                <div class="person-photo"><img src="img/speakers/jstein.png"></div>
+                                <div class="speaker-intro">
+                                    <p class="person-name">Johannes Stein</p>
+
+                                    <p class="person-company">Freelance, Berlin</p>
+
+                                    <p class="person-place">React for Game Development</p>
+
+                                    <p class="person-info">Using React for game development may not seem like an obvious choice at first. With React itself being compared to the Doom 3 game engine at F8 2014, we may not find ourselves in such a bad spot. We will take a look at how games are usually structured. Then we will examine different concepts in game development such as the entity-component pattern, object pools, and how we can implement them in React. At the end, we'll put it all together into a React-powered game.</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/frostney_"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                        <a href="https://github.com/frostney"><img class="if-hovered" src="img/gh-small.png" alt=""></a></div>
+                                    </div>
+                                </div>
+                                <div class="speaker-block">
+                                    <div class="person-photo"><img src="img/speakers/oslobodskoi.png"></div>
+                                    <div class="speaker-intro">
+                                        <p class="person-name">Oleg Slobodskoi</p>
+
+                                        <p class="person-company">Chatgrape, Berlin</p>
+
+                                        <p class="person-place">Javascript Style Sheets</p>
+
+                                        <p class="person-info">About the good parts of writing styles in javascript using JSS. Comparsion to other existing CSS solutions and points about negative aspects got so far.</p>
+
+                                        <div class="social-small">
+                                            <a href="https://twitter.com/oleg008"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                            <a href="https://github.com/kof"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="speaker-block">
+                                    <div class="person-photo"><img src="img/speakers/pdam.png"></div>
+                                    <div class="speaker-intro">
+                                        <p class="person-name">Paul van Dam</p>
+
+                                        <p class="person-company">Cool Blue, Rotterdam</p>
+
+                                        <p class="person-place">Introducing and implementing React at Coolblue</p>
+
+                                        <p class="person-info">At Coolblue we want to keep our employees as happy as possible. That means handing them tools that are fast and easy to work with. Last year we started building new tooling using React. How did we come to this decision and how does it suit a fast growing, dynamic organisation? In this talk I will take you on a trip through the research and decision making that was part of coming to our current development stack.</p>
+
+                                        <div class="social-small">
+                                            <a href="#" style="display: none;"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                            <a href="https://github.com/pcvandamcb"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="speaker-block">
+                                    <div class="person-photo"><img src="img/speakers/halves.png"></div>
+                                    <div class="speaker-intro">
+                                        <p class="person-name">Henrique Alves</p>
+
+                                        <p class="person-company">Lystable, London</p>
+
+                                        <p class="person-place">Building loveable UIs</p>
+
+                                        <p class="person-info">Sharing my experience building loveable UIs. Talking about presentational components and pattern types for build scalable web apps in React.</p>
+
+                                        <div class="social-small">
+                                            <a href="https://twitter.com/healves82"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                            <a href="https://github.com/henriquea"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="speaker-block">
+                                    <div class="person-photo"><img src="img/speakers/mweststrate.png"></div>
+                                    <div class="speaker-intro">
+                                        <p class="person-name">Michel Weststrate</p>
+
+                                        <p class="person-company">Mendix, Rotterdam</p>
+
+                                        <p class="person-place">Transparent reactive programming and mutable data structures</p>
+
+                                        <p class="person-info">The ability to express essential complexity in a simple way is crucial for any code-base. At Mendix we did an interesting discovery during the development of a complex MDD tool. React, mutable data structures and transparent reactive programming are a match made in heaven. We published a library that leverages these concepts; Mobservable. It helps you to write simple, declarative, yet highly efficient code. Your future code maintainers will love you for applying it.</p>
+
+                                        <div class="social-small">
+                                            <a href="https://twitter.com/mweststrate"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                            <a href="https://github.com/mweststrate"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="speaker-block">
+                                    <div class="person-photo"><img src="img/speakers/joshua.png"></div>
+                                    <div class="speaker-intro">
+                                        <p class="person-name">Joshua Sierles</p>
+
+                                        <p class="person-company">Freelance, Sevilla</p>
+
+                                        <p class="person-place">The React Native Playground</p>
+
+                                        <p class="person-info">The React Native Playground breaks down barriers to mobile development by making it easy to write React Native apps right in the browser, and test them across platforms and devices.</p>
+
+                                        <div class="social-small">
+                                            <a href="https://twitter.com/jsierles"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                            <a href="https://github.com/jsierles"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="speaker-block">
+                                    <div class="person-photo"><img src="img/speakers/kureevgrabovski.png"></div>
+                                    <div class="speaker-intro">
+                                        <p class="person-name">Alexey Kureev, Mike Grabowski</p>
+
+                                        <p class="person-company">Publitas / Man+Moon, Amsterdam / Wroclaw</p>
+
+                                        <p class="person-place">Solving a tooling problem for react-native</p>
+
+                                        <p class="person-info">Unfortunately, React Native, being open-sourced last year, still suffers from the lack of great unified tooling. Managing native dependencies, adding custom fonts, just to name few, are the most common things that require you to know a lot of Objective-C and Java. This talk adresses to solve React Native tooling problems.</p>
+
+                                        <div class="social-small">
+                                            <a href="https://twitter.com/kureevalexey"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                            <a href="https://github.com/kureevalexey"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                            <a href="https://twitter.com/grabbou"><img class="if-hovered" src="img/twitter-small.png" alt=""></a>
+                                            <a href="https://github.com/grabbou"><img class="if-hovered" src="img/gh-small.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<a href="#" style="display: none;" class="if-hovered green-button white-text" id="speakers-button"><span id="btn-bold">All</span> speakers</a>-->
+                        </section>
+                        <!--  End of speakers slide  -->
+
+                        <!-- schedule slide begin -->
+                        <!--<section class="slide schedule" style="display: none;">-->
+                        <!--<div class="page-background">-->
+                        <!--<h2 class="main-heading">Schedule</h2>-->
+                        <!--</div>-->
+                        <!--</section>-->
+                        <!--  End of schedule slide  -->
+
+                        <!-- schedule second slide begin -->
+                        <!--<section class="slide schedule-2" style="display: none;">-->
+                        <!--<a name="shedule"></a>-->
+
+                        <!--<p class="time">9:00</p>-->
+
+                        <!--<p class="schedule-heading">Registration</p>-->
+
+                        <!--<p class="time">10:00</p>-->
+
+                        <!--<p class="schedule-heading">Opening</p>-->
+
+                        <!--<p class="time">10:30</p>-->
+
+                        <!--<div class="schedule-image"><img src="img/speakers/oslobodskoi.png" alt=""></div>-->
+                        <!--<p class="schedule-name">Martin Shveller</p>-->
+
+                        <!--<p class="schedule-heading">Show vs. tell in UX design</p>-->
+
+                        <!--<p class="schedule-info">We’ve all heard these “laws” of design: “People don’t read on the web.” “If you-->
+                        <!--have to explain how to use your product, you’ve failed.” “A picture is worth a thousand words.” It seems-->
+                        <!--like our job as designers is to make things as intuitive as possible, using as few words as possible so-->
+                        <!--that the meaning is self-evident through our visual design. But does this always produce the best user-->
+                        <!--experience? Is showing always better than telling? We’ll look at several examples of design from the-->
+                        <!--real world, the web, and apps that use showing, telling, or both as a method for producing the best UX.-->
+                        <!--Rather than just assuming one is always better than the other, learn how to choose the right approach-->
+                        <!--for your particular design problem and users.</p>-->
+
+                        <!--<p class="time">11:10</p>-->
+
+                        <!--<div class="schedule-image"><img src="img/speakers/" alt=""></div>-->
+                        <!--<p class="schedule-name">Jack Hartman</p>-->
+
+                        <!--<p class="schedule-heading">Will your JavaScript app still work in 2030?</p>-->
+
+                        <!--<p class="schedule-info">How will JavaScript be in 15 years? Will your code still work? Ours has to, so we-->
+                        <!--are doing our very best to ensure that. Join me aboard my very opinionated time machine, and you'll-->
+                        <!--learn how to avoid sprinkling magical unicorn powder in the wrong places, how to select the right gods,-->
+                        <!--and how to still sleep without nightmares. In other words, you'll hear how we are trying to write a huge-->
+                        <!--business-critical web app for the future.</p>-->
+
+                        <!--<p class="time">12:50</p>-->
+
+                        <!--<div class="schedule-image"><img src="img/speaker-5.png" alt=""></div>-->
+                        <!--<p class="schedule-name">Rem Jonson</p>-->
+
+                        <!--<p class="schedule-heading">Baby steps and why it's more important-->
+                        <!--than your code skills</p>-->
+
+                        <!--<p class="schedule-info">In this talk I'd like to explain why many startups fail when trying to build a-->
+                        <!--product with fancy code and a "scalable" solution before learning what business/design needs they're-->
+                        <!--trying to solve. Actually, it's not only for startups, it's also for you, as designer or developer. Why-->
+                        <!--we should understand our ideas is more likely to fail than succeed? This is for sure much more important-->
+                        <!--than learning Material Design, ReactJS or any other buzzword of our field.</p>-->
+
+                        <!--<p class="time">13:30</p>-->
+
+                        <!--<div class="schedule-image"><img src="img/speaker-3.png" alt=""></div>-->
+                        <!--<p class="schedule-name">Royan Johnson</p>-->
+
+                        <!--<p class="schedule-heading">Type to the 7th dimension</p>-->
+
+                        <!--<p class="schedule-info">Today, the complexities of type design, type rendering, type readability on devices-->
+                        <!--and type history have all entered the 7th dimension. We’ll see 70 minutes of information and around 700-->
+                        <!--slides compressed in an amusing 42 minutes.</p>-->
+
+                        <!--<p class="time">14:20</p>-->
+
+                        <!--<div class="schedule-image"><img src="img/speaker-2.png" alt=""></div>-->
+                        <!--<p class="schedule-name">Dan Hughes</p>-->
+
+                        <!--<p class="schedule-heading">Building &lt;x-nes&gt;</p>-->
+
+                        <!--<p class="schedule-info">30 years ago the Nintendo Entertainment System could be found in every home, now it-->
+                        <!--can be embedded into every web page using the awesome power of web components. In this talk I will share-->
+                        <!--what I learned from turning an old video game console into a web component.</p>-->
+                        <!--<a href="#" class="green-button white-text if-hovered"><span>Call </span>for <span>speakers</span></a>-->
+                        <!--</section>-->
+                        <!--  End of second schedule slide  -->
+
+                        <!-- sponsors slide begin -->
+                        <section class="slide sponsors">
+                            <a name="sponsors"></a>
+
+                            <h2 class="main-heading green-heading">Sponsors</h2>
+
+                            <p>Our general sponsor who made this awesome experience possible:</p>
+                            <img src="img/partners/ziggo.png" alt="">
+
+                            <p class="sponsor-type">Gold sponsors</p>
+                            <a href="mailto:hi@react-amsterdam.com?subject=Sponsorship" class="be-a-sponsor green-button if-hovered"><span>Your logo </span>here</a>
+
+                            <a href="http://www.coolblue.nl/"><img src="img/partners/coolblue.png" alt=""></a>
+
+                            <a href="http://www.thefrontendlab.com"><img src="img/partners/frontendlabs.png" alt=""></a>
+
+                            <a href="http://www.mollie.nl"><img src="img/partners/mollie.png" alt=""></a>
+
+
+                            <div class="partners" style="display: none;">
+                                <p class="sponsor-type">Partners</p>
+                                <img src="img/microsoft.jpg" alt="">
+                                <img src="img/avocode.jpg" alt="">
+                                <img src="img/intel.jpg" alt="">
+                                <img src="img/computerworld.jpg" alt="">
+                                <img src="img/tnw.jpg" alt="">
+                                <img src="img/ziggo.jpg" alt="">
+                                <img src="img/front.jpg" alt="">
+                                <img src="img/e-com.jpg" alt="">
+                                <img src="img/futurice.jpg" alt="">
+                            </div>
+                            <div class="green-wave"><img src="img/waves-green.png" alt=""></div>
+                        </section>
+                        <!--  End of sponsors slide  -->
+
+                        <!-- organizers slide begin -->
+                        <section class="slide organizers">
+                            <h2 class="main-heading black-heading">Organizers</h2>
+                            <a name="organizers"></a>
+
+                            <div class="organizers-wrapper">
+                                <div class="organizer-block random">
+                                    <div class="person-photo">
+                                        <img src="img/orgs/1.png" alt="">
+                                    </div>
+                                    <p class="person-name">Denis Radin</p>
+
+                                    <p class="person-company">Liberty Global</p>
+
+                                    <p class="organizer-email">denis.radin@gmail.com</p>
+
+                                    <p class="organizer-info">+31 638 482 851</p>
+
+                                    <p class="organizer-info">Skype: lp_funky</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/pixelscommander">
+                                            <img class="if-hovered" src="img/twitter-org.png" alt="">
+                                        </a>
+                                        <a href="https://github.com/pixelscommander">
+                                            <img class="if-hovered" src="img/gh-big.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="organizer-block random">
+                                    <div class="person-photo">
+                                        <img src="img/orgs/2.png" alt="">
+                                    </div>
+                                    <p class="person-name">Robert Haritonov</p>
+
+                                    <p class="person-company">Liberty Global</p>
+
+                                    <p class="organizer-email">r@rhr.me</p>
+
+                                    <p class="organizer-info">+31 618 699 604</p>
+
+                                    <p class="organizer-info">Skype: haritonov.r</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/operatino">
+                                            <img class="if-hovered" src="img/twitter-org.png" alt="">
+                                        </a>
+                                        <a href="https://github.com/operatino">
+                                            <img class="if-hovered" src="img/gh-big.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="organizer-block random">
+                                    <div class="person-photo">
+                                        <img src="img/orgs/5.png" alt="">
+                                    </div>
+                                    <p class="person-name">Sanders Spies</p>
+
+                                    <p class="person-company">Freelance</p>
+
+                                    <p class="organizer-email">sandermail@gmail.com</p>
+
+                                    <p class="organizer-info" style="display: none;">3 (6079) 1234990</p>
+
+                                    <p class="organizer-info">Skype: sander_spies</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/Sander_Spies">
+                                            <img class="if-hovered" src="img/twitter-org.png" alt="">
+                                        </a>
+                                        <a href="https://github.com/SanderSpies">
+                                            <img class="if-hovered" src="img/gh-big.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="organizer-block random">
+                                    <div class="person-photo">
+                                        <img src="img/orgs/3.png" alt="">
+                                    </div>
+                                    <p class="person-name">Mikhail Larchanka</p>
+
+                                    <p class="person-company">Liberty Global</p>
+
+                                    <p class="organizer-email">horrorgr@gmail.com</p>
+
+                                    <p class="organizer-info">+31 621 967 276</p>
+
+                                    <p class="organizer-info">Skype: michael.larchenko</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/MLarchanka">
+                                            <img class="if-hovered" src="img/twitter-org.png" alt="">
+                                        </a>
+                                        <a href="https://github.com/larchanka">
+                                            <img class="if-hovered" src="img/gh-big.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="organizer-block">
+                                    <div class="person-photo">
+                                        <img src="img/orgs/4.png" alt="">
+                                    </div>
+                                    <p class="person-name">Vladimir Guguev</p>
+
+                                    <p class="person-company">Liberty Global</p>
+
+                                    <p class="organizer-email" style="display: none;">wizardzloy@gmail.com</p>
+
+                                    <p class="organizer-info" style="display: none;">3 (6079) 1234990</p>
+
+                                    <p class="organizer-info" style="display: none;">Skype: lp_funky</p>
+
+                                    <div class="social-small">
+                                        <a href="https://twitter.com/wizardzloy">
+                                            <img class="if-hovered" src="img/twitter-org.png" alt="">
+                                        </a>
+                                        <a href="https://github.com/wizardzloy">
+                                            <img class="if-hovered" src="img/gh-big.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-us-block"><p class="follow-us">Follow us</p>
+
+                                <div class="social-icons"><a href="https://twitter.com/ReactAmsterdam"><img class="if-hovered"
+                                    src="img/twitter.png"></a><a
+                                    href="https://www.facebook.com/react.amsterdam/"><img class="if-hovered" src="img/facebook.png"></a>
+                                </div>
+                            </div>
+                        </section>
+                        <!--  End of organizers slide  -->
+
+                    </main>
+                    <!--  End of main  -->
+                    <!-- footer begin -->
+                    <footer class="footer">
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="#event" class="navigation-link">The event</a></li>
+                                <li><a href="#location" class="navigation-link">Location</a></li>
+                                <li><a href="#speakers" class="navigation-link">Speakers</a></li>
+                                <!--<li><a href="#shedule" class="navigation-link">Schedule</a></li>-->
+                                <li><a href="#sponsors" class="navigation-link">Sponsors</a></li>
+                                <li><a href="#organizers" class="navigation-link">Contact us</a></li>
+                                <li><a href="http://confcodeofconduct.com/" class="navigation-link">Code of conduct</a></li>
+                            </ul>
+                        </nav>
+                        <a href="http://react-amsterdam.eventbrite.com/">
+                            <div class="green-button footer-btn" id="footer-button"><p>Buy ticket</p></div>
+                        </a>
+                    </footer>
+                    <!--  End of footer  -->
+                </div>
+                <!--  End of wrapper  -->
+                <script src="https://maps.googleapis.com/maps/api/js"></script>
+                <script>
+                    function initialize() {
+                        var mapCanvas = document.getElementById('map');
+                        var mapOptions = {
+                            center: new google.maps.LatLng(52.3997947, 4.8926053999999795),
+                            zoom: 15,
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        }
+                        var map = new google.maps.Map(mapCanvas, mapOptions)
+                    }
+                    google.maps.event.addDomListener(window, 'load', initialize);
+                </script>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="js/script.js"></script>
+                <script src="js/vendor/slick/slick.min.js"></script>
+            </body>
+            </html>

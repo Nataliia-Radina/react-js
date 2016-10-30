@@ -6,7 +6,7 @@ body {
     padding: 0;
 }
 
-body { 
+body {
     font-family: "latolight";
     font-size: 18px;
     color: #000;
@@ -54,12 +54,13 @@ body {
     width: 86px;
     height: 86px;
     cursor: pointer;
-    z-index: 4; 
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s; 
+    z-index: 4;
+    transform: translateZ(0);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
     display: none;
 }
 
@@ -93,14 +94,15 @@ body {
 .mobile-menu {
     position: fixed;
     width: 100%;
-    z-index: 4;
+    z-index: 11;
     margin-top: -510px;
     display: none;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    transform: translateZ(0);
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
 }
 
 .nav-mobile {
@@ -118,7 +120,7 @@ body {
     color: #fff;
     font-size: 20px;
     font-family: "latobold";
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .mobile-link:hover {
@@ -178,7 +180,7 @@ body {
     text-align: center;
     padding: 20px 0 25px 0;
     margin: 0;
-    letter-spacing: 0.1em;   
+    letter-spacing: 0.1em;
 }
 
 .slogan {
@@ -206,8 +208,8 @@ body {
 }
 
 .date-place span {
-    font-family: "latoblack";  
-    font-weight: normal; 
+    font-family: "latoblack";
+    font-weight: normal;
 }
 
 .inline {
@@ -277,7 +279,7 @@ img.if-hovered:hover {
     margin: 0 auto;
     left: 0;
     right: 0;
-    bottom: 140px; 
+    bottom: 140px;
     position: absolute
 }
 
@@ -298,7 +300,7 @@ img.if-hovered:hover {
     display: inline-block;
     position: absolute;
     right: 0;
-    width: 12%;
+    width: 10%;
     margin: 0;
     bottom: 0;
     min-width: 100px;
@@ -337,14 +339,11 @@ li {
 
 .footer li {
     display: inline-block;
-    width: 8.75%;
     padding-top: 10px;
-    min-width: 76px;
+    margin-right: 2.5%;
+    text-align: left;
 }
 
-li:last-child {
-    margin-right: 0;
-}
 
 .navigation-link {
     color: #fff; /* text color + color overlay */
@@ -361,7 +360,6 @@ li:last-child {
 /* event section */
 
 .slide.event {
-    min-height: 100%;
     padding-bottom: 48px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -387,13 +385,10 @@ li:last-child {
     font-size: 24px;
 }
 
-<<<<<<< HEAD
-=======
 .event-text a, .event-text a:visited {
     color: #1bcd7c;
 }
 
->>>>>>> master
 .follow-us-block {
     padding-bottom: 50px;
 }
@@ -420,15 +415,6 @@ li:last-child {
 }
 
 .location .page-background {
-<<<<<<< HEAD
-    padding-top: 30px;
-    background-image: url("../img/location.jpg");
-    width: 50%;
-    display: inline-block;
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-=======
     width: 50%;
     display: inline-block;
     height: 100%;
@@ -440,7 +426,7 @@ li:last-child {
 }
 
 .single-item img {
-    max-width: 100%;
+
 }
 
 .location-text {
@@ -463,9 +449,9 @@ li:last-child {
     font-size: 34px;
     color: #fff;
     font-family: "latomedium";
-    text-align: center;  
+    text-align: center;
     margin: 0;
-    letter-spacing: 0.075em; 
+    letter-spacing: 0.075em;
 }
 
 .map-wrap{
@@ -495,7 +481,7 @@ li:last-child {
 
 .slick-prev
 {
-    z-index: 500;
+    z-index: 10;
     left: 25px;
     background-image: url("../img/arrow-left.png");
 }
@@ -505,10 +491,16 @@ li:last-child {
 {
     right: 25px;
     background-image: url("../img/arrow-right.png");
-    z-index: 500;
+    z-index: 10;
 }
 
+.slick-slide, .slick-list, .slick-track {
+    height: 100%;
+}
 
+.slick-slide {
+    background-size: cover;
+}
 
 
 /* speakers section */
@@ -531,22 +523,18 @@ li:last-child {
 
 .speaker-block {
     width: 24%;
-    margin-right: 12%;
+    margin: 0 4.6667% 60px 4.6667%;
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 60px;
 }
 
 .hidden-speaker {
     display: none;
 }
 
-.last-in-raw {
-    margin-right: 0;
-}
-
 .person-photo img {
     max-width: 100%;
+    border-radius: 50%;
 }
 
 .person-name {
@@ -555,22 +543,24 @@ li:last-child {
     text-align: center;
     letter-spacing: 0.025em;
     margin: 35px 0 0 0;
+    line-height: 32px;
 }
 
 .person-company {
     font-family: "latoblack";
     font-size: 14px;
-    text-align: center; 
+    text-align: center;
     letter-spacing: 0.025em;
     margin: 0;
+    margin-top: 10px;
 }
 
 .person-place {
     text-align: center;
-    font-family: "latolight";
+    font-family: "latoblack";
     font-size: 18px;
     margin: 30px 0;
-    
+
 }
 
 .person-info {
@@ -608,7 +598,7 @@ li:last-child {
 }
 
 .schedule .page-background {
-    background-image: url("../img/schedule.jpg"); 
+    background-image: url("../img/schedule.jpg");
     padding-top: 350px;
 }
 
@@ -634,7 +624,7 @@ li:last-child {
     font-size: 30px;
     letter-spacing: 0.025em;
     width: 40%;
-    margin: 0 auto;  
+    margin: 0 auto;
 }
 
 .hidden-heading {
@@ -648,7 +638,8 @@ li:last-child {
 }
 
 .schedule-image img {
-    max-width: 100%;    
+    max-width: 100%;
+    border-radious: 50%;
 }
 
 .schedule-name {
@@ -687,11 +678,11 @@ p.sponsor-type {
 
 .partners  {
     width: 90%;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .partners p {
-    margin: 70px 0 40px 0; 
+    margin: 70px 0 40px 0;
 }
 
 .partners img {
@@ -700,7 +691,7 @@ p.sponsor-type {
 }
 
 .green-wave {
-    margin-top: 30px;
+    margin-top: 150px;
     margin-bottom: 50px;
 }
 
@@ -722,9 +713,9 @@ p.sponsor-type {
 }
 
 .organizers-wrapper {
-    width: 60%;
-    margin: 0 auto; 
-    font-size: 0;  
+    width: 70%;
+    margin: 0 auto;
+    font-size: 0;
 }
 
 .organizer-block {
@@ -732,10 +723,7 @@ p.sponsor-type {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 50px;
-}
-
-.organizer-block:last-child {
-    margin-left: 24%;
+    margin: 0 6% 50px 6%;
 }
 
 .organizer-email {
@@ -814,14 +802,22 @@ p.sponsor-type {
 
 /* mediaquerries */
 
-@media (max-width: 760px){
+@media (max-width: 799px){
 
     .organizers-wrapper {
-        width: 80%;
-        margin: 0 auto; 
-        font-size: 0;  
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0;
     }
     
+    .mobile-menu,
+    .hamburger-menu {
+        display: block;
+    }
+
+    .footer {
+        display: none;
+    }
 }
 
 @media (max-width: 700px){
@@ -830,21 +826,12 @@ p.sponsor-type {
         max-width: 100%;
     }
 
-    .mobile-menu, 
-    .hamburger-menu {
-        display: block;
-    }
-
-    .intro .page-background {
-        padding-top: 90px;
-    }
-
     .main-heading {
      font-size: 66px;
     }
 
      .black-heading {
-        font-size: 60px;  
+        font-size: 60px;
     }
 
     .slogan {
@@ -853,15 +840,35 @@ p.sponsor-type {
 
     .date-place {
         font-size: 20px;
+        width: 55%;
     }
 
-    .footer {
-        display: none;
+
+    .header .left {
+        width: 15%;
+    }
+
+    .header .right {
+        width: 10%;
+    }
+
+    .right-waves {
+        width: 15%;
+        margin-left: 0;
+    }
+
+    .left-waves {
+        width:15%;
+        margin-right: 3%;
+    }
+
+    .intro .page-background {
+        padding-bottom: 280px;
     }
 
     .slide.location {
-        height: 200%;
-        min-height: 1000px;
+        height: 100%;
+        min-height: 500px;
     }
 
     .location .page-background {
@@ -873,13 +880,13 @@ p.sponsor-type {
     .map-wrap {
         width: 100%;
         height: 50%;
-        display: block; 
+        display: block;
     }
 
     .speaker-block {
         width: 100%;
+        margin-left: 0;
         margin-right: 0;
-        display: block;     
     }
 
     .speaker-wrapper {
@@ -889,26 +896,26 @@ p.sponsor-type {
     .schedule-info {
         width: 84%;
     }
+
     .schedule-heading {
-        width: 84%; 
+        width: 84%;
     }
+
     .organizers-wrapper {
-        width: 84%;  
+        width: 84%;
     }
 
     .organizer-block {
         width: 100%;
         display: block;
-    }
-
-    .organizer-block:last-child {
-       margin-left: 0;
-       margin-top: 70px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .slide.schedule {
         display: none;
     }
+
     .slide.event {
        height: auto;
     }
@@ -916,9 +923,11 @@ p.sponsor-type {
     .event .page-background {
         height: 150px;
     }
+
     .event-text {
         width: 84%;
     }
+
     .schedule-2 .page-background {
         height: 237px;
         -webkit-background-size: cover;
@@ -942,7 +951,7 @@ p.sponsor-type {
     .location-icons div {
         width: 100%;
         display: inline-block;
-        margin-top: 90px; 
+        margin-top: 90px;
         vertical-align: top;
         margin-right: 0;
     }
@@ -974,9 +983,11 @@ p.sponsor-type {
 }
 
 @media (max-width: 500px){
+
     .main-heading {
         font-size: 50px;
     }
+
     .black-heading {
         font-size: 46px;
     }
@@ -988,7 +999,7 @@ p.sponsor-type {
 
     .mob-ticket-btn {
        width: 280px;
-        font-size: 26px; 
+        font-size: 26px;
     }
 
     .mid-heading {
@@ -1016,20 +1027,20 @@ p.sponsor-type {
 }
 
 @media (min-width: 1480px) {
-    
+
     .slide.location {
         min-height: 950px;
     }
 
     .slide.schedule  {
         height: 100%;
-        min-height: 950px; 
+        min-height: 950px;
     }
 
     .slide.intro {
         height: 100%;
         width: 100%;
-        min-height: 950px;  
+        min-height: 950px;
     }
 
     .speakers-wrapper {
@@ -1050,4 +1061,18 @@ p.sponsor-type {
     }
 }
 
+.be-a-sponsor {
+    display: inline-block;
+    width: 300px;
+    height: 106px;
+    line-height: 106px;
+    padding: 0;
+    margin: 10px 10px 0 0;
+    vertical-align: top;
+    color: white;
+    opacity: 0.85;
+}
 
+.be-a-sponsor:hover {
+    opacity: 1;
+}
